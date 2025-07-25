@@ -1144,6 +1144,7 @@ footer::before {
 }
 
 
+
 @keyframes toLeftFromRight {
     49% {
         transform: translateX(100%);
