@@ -1159,3 +1159,126 @@ footer::before {
         opacity: 1;
     }
 }
+/* Tablet (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .header__content nav {
+        display: none; /* Ẩn menu desktop tạm thời hoặc chuyển sang dạng hamburger nếu có JS */
+    }
+    
+    .saCarousel {
+        padding-top: 100px;
+    }
+
+    .saCarousel__content,
+    .aboutUs__content,
+    .features__content,
+    .footer__top,
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .saCarousel__left,
+    .saCarousel__right,
+    .aboutUs__left,
+    .aboutUs__right,
+    .features__left,
+    .features__right,
+    .footer__text,
+    .footer__form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .saCarousel__banner, 
+    .features__banner {
+        margin: 30px auto 0;
+        width: 80%;
+    }
+    
+    .aboutUs__left {
+        position: relative;
+        left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .aboutUs__left img {
+        border-radius: 20px;
+    }
+
+    .services__content,
+    .plan__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio__item1, 
+    .portfolio__item5, 
+    .portfolio__item6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .number__content {
+        flex-wrap: wrap;
+    }
+    
+    .number__item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .footer__item {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    
+    .footer__bottom {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .title h2 {
+        font-size: 40px;
+    }
+    
+    .services__content,
+    .plan__content,
+    .portfolio__content {
+        grid-template-columns: 1fr;
+    }
+    
+    .number__item {
+        width: 100%;
+    }
+    
+    .footer__item {
+        width: 100%;
+    }
+    
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer__form form {
+        flex-direction: column;
+    }
+    
+    .footer__form input {
+        border-radius: 0.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer__form button {
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+}
